@@ -1,0 +1,76 @@
+body {
+    background-color: #f8f9fa;
+    color: #4e1a26;
+}
+
+.navbar {
+    background-color: #800000;
+}
+
+.navbar-brand, .nav-link, .search-btn {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.secondary-navbar {
+    background-color: #b22222;
+}
+
+.secondary-navbar .nav-link {
+    color: white;
+}
+
+.secondary-navbar .nav-link:hover {
+    background-color: #a52a2a;
+    color: white;
+}
+
+.carousel-item img {
+    height: 600px;    
+    width: 100%;         
+    object-fit: cover;       
+    object-position: center; 
+    background-repeat: no-repeat;
+}
+#gallery {
+    background-color: #b22222; 
+    color: #ffffff;        
+    padding: 20px 0;  
+}
+
+#gallery h2 {
+    color: #ffffff;        
+}
+
+.card {
+    background-color: #ffffff; 
+    border: none;              
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.card-img-top {
+    width: 100%;             /* Make the image take the full width of the card */
+    height: 200px;           /* Set a fixed height for all images */
+    object-fit: cover;       /* Ensures the image fits within the specified dimensions without distortion */
+    object-position: center; /* Centers the cropped portion of the image */
+}
+
+footer {
+    background-color: #800000;
+    color: white;
+    padding: 15px;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}

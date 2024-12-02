@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Information System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Navbar -->   
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="Website Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Barangay InfoSys
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <div class="ms-auto d-flex align-items-center">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light search-btn" type="submit">Search</button>
+                    <a class="btn btn-outline-light ms-2" href="login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary Navbar -->
+    <nav class="secondary-navbar navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNavbar" aria-controls="secondaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="secondaryNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Image Slider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="slider1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to Barangay InfoSys</h5>
+                    <p>Your trusted information system for the community.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="slider2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Community Updates</h5>
+                    <p>Stay informed about barangay events and news.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="slider3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Get Involved</h5>
+                    <p>Join hands for a better community!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Image Gallery -->
+    <section id="gallery" class="container-fluid mt-5">
+        <h2 class="text-center mb-4">Image Gallery</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="hall.jpg" class="card-img-top" alt="Community Hall">
+                        <div class="card-body">
+                            <p class="card-text text-center">Community Hall</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="office.jpg" class="card-img-top" alt="Barangay Office">
+                        <div class="card-body">
+                            <p class="card-text text-center">Barangay Office</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="health.jpg" class="card-img-top" alt="Health Center">
+                        <div class="card-body">
+                            <p class="card-text text-center">Health Center</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="park.jpg" class="card-img-top" alt="Barangay Park">
+                        <div class="card-body">
+                            <p class="card-text text-center">Barangay Park</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <hr style="border: 2px solid black;">
+    <!-- YouTube Video -->
+    <section id="video" class="container mt-5">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="ratio ratio-16x9">
+            <!-- Embed the video by using the correct embed link -->
+            <iframe src="https://www.youtube.com/embed/ahwQmZ-6xcs" title="Barangay InfoSys Video" allowfullscreen></iframe>
+        </div>
+    </section>
+    <hr style="border: 2px solid black;">
+    <!-- Google Map -->
+    <section id="map" class="container mt-5">
+        <h2 class="text-center mb-4">Our Location</h2>
+        <div class="ratio ratio-16x9">
+            <!-- Embed Google Maps with the correct link -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252972.7415404707!2d125.04128003498046!3d7.821640516398972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fee4f56840c151%3A0xe28824c1a610b3da!2sSan%20Fernando%2C%20Bukidnon!5e0!3m2!1sen!2sph!4v1732621668021!5m2!1sen!2sph" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left side: Contact Information -->
+            <div class="contact-info">
+                <p class="mb-1">Contact Us:</p>
+                <p class="mb-1">Barangay InfoSys</p>
+                <p class="mb-1">Email: info@barangay.com</p>
+                <p class="mb-1">Phone: +123 456 789</p>
+            </div>
+            
+            <!-- Right side: Social Media Icons -->
+            <div class="social-icons d-flex">
+                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <p class="mt-3">© 2024 Barangay InfoSys. All Rights Reserved.</p>
+    </footer>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
